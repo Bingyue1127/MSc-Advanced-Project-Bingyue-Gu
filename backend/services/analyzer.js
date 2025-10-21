@@ -1,5 +1,4 @@
 const OpenAI = require('openai');
-const { HttpsProxyAgent } = require('https-proxy-agent');
 const { fetch: undiciFetch, ProxyAgent } = require('undici');
 const config = require('../config/config');
 const { getCombinedPrompt, getIndividualPrompt, dimensions } = require('../prompts/dimensions');
@@ -184,4 +183,5 @@ async function analyzeContent(content, res, headersAlreadySet = false) {
 module.exports = {
   analyzeContent
 };
+
 
