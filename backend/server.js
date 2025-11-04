@@ -163,7 +163,7 @@ app.use((err, req, res, next) => {
 // Start server
 app.listen(config.port, () => {
   console.log('=================================');
-  console.log('🔍 Privacy Prism Server Started');
+  console.log('Privacy Prism Server Started');
   console.log('=================================');
   console.log(`Server running on: http://localhost:${config.port}`);
   console.log(`Model: ${config.model}`);
@@ -172,4 +172,5 @@ app.listen(config.port, () => {
 });
 
 module.exports = app;
+
 
